@@ -1,11 +1,7 @@
-#test
+import json
+from pathlib import Path
 
-class TitleCard:
-    def title(self, name):
-        print(f"           {name}")
+with open("vocab.json", "r", encoding="utf-8") as f:
+    words = json.load(f)
 
-title_a = TitleCard()
-title_a.title("Add a sdfsdfsdfd")
-
-
-#print(title_a.title)
+print(words)   # shows the list of dicts
